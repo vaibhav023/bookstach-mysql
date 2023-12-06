@@ -1,0 +1,5 @@
+# create test database
+CREATE DATABASE IF NOT EXISTS `${MYSQL_DATABASE_SQL}`;
+
+# grant rights
+GRANT ALL PRIVILEGES ON `${MYSQL_DATABASE_SQL}`.* TO '${MYSQL_USER}'@'%';
